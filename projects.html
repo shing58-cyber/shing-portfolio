@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets | Shiba Bonhomme</title>
+  <meta name="description" content="Détail des projets réalisés par Shiba Bonhomme pendant sa formation en développement web.">
+  <meta name="theme-color" content="#10141c">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Accueil du portfolio de Shiba Bonhomme">shiba<span class="accent">.dev</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="projects.html" aria-current="page">Projets</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section page-hero">
+      <div class="container">
+        <p class="eyebrow">// projets</p>
+        <h1>Mes projets de formation</h1>
+        <p class="hero-desc narrow-text">
+          Ces réalisations ont été conçues pour pratiquer la structure HTML, la mise en page responsive et les interactions JavaScript. J'y indique aussi ce que j'ai appris et ce que j'améliorerais encore.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-detail-list">
+        <article class="project-detail reveal" id="projet-croix-rouge">
+          <div class="project-thumb thumb-1" aria-hidden="true"></div>
+          <div class="project-detail-body">
+            <h2>Page événement Croix-Rouge</h2>
+            <p>
+              Ce projet met en avant un événement communautaire lié à la Croix-Rouge de Petit-Goâve. L'objectif principal était de créer une page capable d'informer vite, de guider l'œil et d'inciter à l'inscription sans perdre l'utilisateur dans des blocs inutiles.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-columns">
+              <div>
+                <h3>Points travaillés</h3>
+                <ul class="check-list">
+                  <li>Hiérarchie visuelle simple</li>
+                  <li>CTA visible dès le premier écran</li>
+                  <li>Lecture rapide sur smartphone</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Ce que j'ai retenu</h3>
+                <ul class="check-list">
+                  <li>Aller à l'essentiel améliore la compréhension</li>
+                  <li>La cohérence entre texte et action évite la confusion</li>
+                  <li>Un bon espacement change beaucoup la lisibilité</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://shing58-cyber.github.io/journee-don-croix-rouge/" class="btn btn-primary" target="_blank" rel="noopener">Voir le live</a>
+              <a href="https://github.com/shing58-cyber/journee-don-croix-rouge" class="btn btn-outline" target="_blank" rel="noopener">Voir le code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-detail reverse reveal" id="projet-convertisseur">
+          <div class="project-thumb thumb-2" aria-hidden="true"></div>
+          <div class="project-detail-body">
+            <h2>Convertisseur Rapide</h2>
+            <p>
+              J'ai réalisé cet outil pour pratiquer la logique JavaScript sur une interface très courte. L'enjeu était de garder une saisie claire, un choix de conversion explicite et un résultat immédiat, sans détour dans le parcours utilisateur.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-columns">
+              <div>
+                <h3>Points travaillés</h3>
+                <ul class="check-list">
+                  <li>Gestion d'événements en JavaScript</li>
+                  <li>Formulaire simple et ciblé</li>
+                  <li>Retour immédiat sans rechargement</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Ce que j'améliorerais</h3>
+                <ul class="check-list">
+                  <li>Plus d'unités disponibles</li>
+                  <li>Messages d'erreur encore plus précis</li>
+                  <li>Tests utilisateurs sur plusieurs écrans</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://shing58-cyber.github.io/convertisseur-pratique-utile/" class="btn btn-primary" target="_blank" rel="noopener">Voir le live</a>
+              <a href="https://github.com/shing58-cyber/convertisseur-pratique-utile" class="btn btn-outline" target="_blank" rel="noopener">Voir le code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="container center-cta">
+        <a href="contact.html" class="btn btn-outline">Discuter d'un futur projet</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shiba Bonhomme — Développeur web junior</p>
+      <div class="social-links">
+        <a href="https://github.com/shing58-cyber" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiba-bonhomme-777915420/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

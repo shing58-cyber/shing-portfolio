@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Shiba Bonhomme</title>
+  <meta name="description" content="Page de contact du portfolio de Shiba Bonhomme.">
+  <meta name="theme-color" content="#10141c">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Accueil du portfolio de Shiba Bonhomme">shiba<span class="accent">.dev</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section page-hero">
+      <div class="container">
+        <p class="eyebrow">// contact</p>
+        <h1>Entrer en contact</h1>
+        <p class="hero-desc narrow-text">
+          Cette page donne une entrée directe pour me joindre. Le formulaire ci-dessous valide les informations côté front-end et affiche un message clair en cas d'erreur ou de succès.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid contact-grid-wide">
+        <article class="info-card reveal">
+          <h2>Coordonnées</h2>
+          <p>Pour un échange rapide, vous pouvez copier mon adresse e-mail puis m'écrire avec l'objet de votre demande.</p>
+          <button class="btn btn-outline" id="copyEmailBtn" type="button" data-email="shibabonhomme58@gmail.com">
+            Copier mon e-mail
+          </button>
+          <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+          <ul class="check-list compact-list">
+            <li>Réponse simulée côté interface</li>
+            <li>Validation des champs requis</li>
+            <li>Adresse e-mail contrôlée</li>
+            <li>Message de 10 caractères minimum</li>
+          </ul>
+        </article>
+
+        <form class="contact-form reveal reveal-delay-1" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+              <span class="error-msg" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" required></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shiba Bonhomme — Développeur web junior</p>
+      <div class="social-links">
+        <a href="https://github.com/shing58-cyber" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiba-bonhomme-777915420/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

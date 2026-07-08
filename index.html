@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiba Bonhomme | Portfolio développeur web junior</title>
+  <meta name="description" content="Portfolio personnel de Shiba Bonhomme : présentation, compétences, projets web, contact et démarche qualité.">
+  <meta name="theme-color" content="#10141c">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Accueil du portfolio de Shiba Bonhomme">shiba<span class="accent">.dev</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">// portfolio personnel</p>
+          <h1>Je conçois des pages web simples, lisibles et utiles.</h1>
+          <p class="hero-role">
+            <span id="typedRole">Développeur web junior</span><span class="cursor" aria-hidden="true">_</span>
+          </p>
+          <p class="hero-desc">
+            Je m'appelle <strong>Shiba Bonhomme</strong>. Je suis étudiant en sciences comptables à la FASCH et je me forme en parallèle au développement web. J'aime les interfaces sobres, les contenus concrets et les sites qui restent rapides sur mobile.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+            <a href="about.html" class="btn btn-outline">Mieux me connaître</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Repères de travail">
+          <h2>Ma méthode</h2>
+          <ul class="check-list">
+            <li>Structure HTML sémantique</li>
+            <li>Mise en page responsive</li>
+            <li>JavaScript utile, sans surcharge</li>
+            <li>Contrôles d'accessibilité et d'écoconception</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="apropos">
+      <div class="container about-grid reveal">
+        <div class="avatar-frame">
+          <img src="assets/photo.jpg" alt="Portrait de Shiba Bonhomme" width="916" height="826" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <span class="avatar-fallback">SB</span>
+        </div>
+        <div>
+          <p class="eyebrow">// à propos</p>
+          <h2>Un profil en construction, avec une approche sérieuse</h2>
+          <p>
+            Ma formation en comptabilité m'aide à travailler avec méthode, précision et sens de l'organisation. En développement web, je privilégie les choix utiles : navigation claire, texte compréhensible, composants réutilisables et poids raisonnable des pages.
+          </p>
+          <p>
+            En dehors des cours, mon engagement bénévole à la Croix-Rouge de Petit-Goâve nourrit mon envie de créer des projets concrets, au service de vraies personnes et de vrais besoins.
+          </p>
+          <div class="inline-actions">
+            <a href="about.html" class="btn btn-outline">Lire mon parcours</a>
+            <a href="assets/cv.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="competences">
+      <div class="container">
+        <p class="eyebrow">// compétences</p>
+        <h2>Ce que je maîtrise déjà et ce que je consolide</h2>
+
+        <div class="skills-grid reveal">
+          <article class="info-card">
+            <h3>Développement front-end</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">HTML5 sémantique</span><span class="skill-level level-confiant">Confiant</span></li>
+              <li><span class="skill-name">CSS3 / Responsive</span><span class="skill-level level-autonome">Autonome</span></li>
+              <li><span class="skill-name">JavaScript</span><span class="skill-level level-notions">En progression</span></li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Outils et bonnes pratiques</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Git / GitHub</span><span class="skill-level level-autonome">Autonome</span></li>
+              <li><span class="skill-name">Figma / Stitch</span><span class="skill-level level-notions">Utilisé en projet</span></li>
+              <li><span class="skill-name">Accessibilité / Performance</span><span class="skill-level level-notions">Vérification continue</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projets">
+      <div class="container">
+        <p class="eyebrow">// projets</p>
+        <h2>Deux exercices qui montrent ma progression</h2>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-1" aria-hidden="true"></div>
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+              </div>
+              <h3>Page événement Croix-Rouge</h3>
+              <p>Une landing page pensée pour mettre en avant un événement communautaire avec une hiérarchie claire, un appel à l'action visible et une lecture rapide sur mobile.</p>
+              <p class="project-note">Apprentissage clé : organiser une page promotionnelle sans surcharger le contenu.</p>
+              <a href="projects.html#projet-croix-rouge" class="link-arrow">Voir le détail du projet →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-thumb thumb-2" aria-hidden="true"></div>
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+              </div>
+              <h3>Convertisseur Rapide</h3>
+              <p>Un petit outil de conversion conçu pour être immédiat à utiliser, avec une interface simple, des choix lisibles et une logique JavaScript claire.</p>
+              <p class="project-note">Apprentissage clé : relier un formulaire simple à un résultat dynamique sans rechargement.</p>
+              <a href="projects.html#projet-convertisseur" class="link-arrow">Voir le détail du projet →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-cta">
+          <a href="projects.html" class="btn btn-outline">Voir tous les détails</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">// contact</p>
+          <h2>Parlons d'un besoin concret</h2>
+          <p>
+            Je peux échanger autour d'un site vitrine, d'une amélioration d'interface ou d'un exercice de formation. Si vous avez une idée, écrivez-moi avec le plus de contexte possible.
+          </p>
+          <button class="btn btn-outline" id="copyEmailBtn" type="button" data-email="shibabonhomme58@gmail.com">
+            Copier mon e-mail
+          </button>
+          <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+          <p class="contact-note">Réponse front simulée : le formulaire valide les champs côté navigateur.</p>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+              <span class="error-msg" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shiba Bonhomme — Développeur web junior</p>
+      <div class="social-links">
+        <a href="https://github.com/shing58-cyber" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiba-bonhomme-777915420/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

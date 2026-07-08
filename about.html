@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos | Shiba Bonhomme</title>
+  <meta name="description" content="Parcours, méthode de travail et objectifs de Shiba Bonhomme, développeur web junior.">
+  <meta name="theme-color" content="#10141c">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Accueil du portfolio de Shiba Bonhomme">shiba<span class="accent">.dev</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html" aria-current="page">À propos</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section page-hero">
+      <div class="container about-grid about-grid-page">
+        <div class="avatar-frame avatar-frame-large reveal">
+          <img src="assets/photo.jpg" alt="Portrait de Shiba Bonhomme" width="916" height="826" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <span class="avatar-fallback">SB</span>
+        </div>
+        <div>
+          <p class="eyebrow">// à propos</p>
+          <h1>Un étudiant qui construit pas à pas sa pratique du web</h1>
+          <p class="hero-desc">
+            Je combine une base académique en sciences comptables et une montée en compétence progressive en développement front-end. Cette double approche me pousse à travailler avec structure, sobriété et sens du détail.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column-layout">
+        <article class="info-card reveal">
+          <h2>Mon parcours</h2>
+          <p>
+            À la FASCH, je développe une rigueur d'analyse et d'organisation qui m'aide aussi dans le code. En parallèle, ma formation web m'a permis de pratiquer HTML, CSS, JavaScript, la conception de wireframes et les premiers réflexes d'accessibilité.
+          </p>
+          <p>
+            Mon engagement bénévole à la Croix-Rouge de Petit-Goâve influence aussi ma manière de penser les interfaces : un site doit être compréhensible, léger et réellement utile.
+          </p>
+        </article>
+
+        <article class="info-card reveal reveal-delay-1">
+          <h2>Ma façon de travailler</h2>
+          <ul class="check-list">
+            <li>Commencer par le contenu et la hiérarchie des informations</li>
+            <li>Construire une base HTML claire avant le style</li>
+            <li>Tester les composants sur petits et grands écrans</li>
+            <li>Ajouter uniquement le JavaScript qui apporte un vrai service</li>
+            <li>Vérifier focus clavier, lisibilité et poids des ressources</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container two-column-layout">
+        <article class="info-card reveal">
+          <h2>Ce que je cherche à améliorer</h2>
+          <ul class="check-list">
+            <li>Approfondir JavaScript et la logique d'interaction</li>
+            <li>Structurer encore mieux les projets multi-pages</li>
+            <li>Faire davantage de tests réels sur mobile</li>
+            <li>Rendre mes choix d'interface plus personnels et plus mémorables</li>
+          </ul>
+        </article>
+
+        <article class="info-card reveal reveal-delay-1">
+          <h2>Ce que j'apporte déjà</h2>
+          <ul class="check-list">
+            <li>Une attitude sérieuse face aux consignes</li>
+            <li>Une préférence pour les interfaces lisibles</li>
+            <li>Une bonne base en responsive simple</li>
+            <li>Une volonté d'apprendre par la pratique</li>
+          </ul>
+          <div class="inline-actions">
+            <a href="projects.html" class="btn btn-primary">Voir les projets</a>
+            <a href="contact.html" class="btn btn-outline">Me contacter</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shiba Bonhomme — Développeur web junior</p>
+      <div class="social-links">
+        <a href="https://github.com/shing58-cyber" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiba-bonhomme-777915420/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
